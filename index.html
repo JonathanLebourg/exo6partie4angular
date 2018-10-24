@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Exercice 6 - partie 4 - Angular</title>
+</head>
+<body ng-app>
+  <div class="container present">
+    <h1>Exercice 6 de la partie 4 d'Angular</h1>
+    <p>Faire une page HTML contenant deux paragrahes et deux boutons.
+       </br>Au clic sur le premier uniquement le paragrahe 1 doit être visible.
+     </br>Au clic sur le bouton deux, seulement le paragrahe 2 doit apparaître.</p>
+  </div>
+  <div class="container show">
+    <button type="button" name="button" ng-click= "show=false">Georges Best</button>
+    <button type="button" name="button" ng-click= "show=true">Sócrates Brasileiro Sampaio de Souza Vieira de Oliveira</button>
+  </div>
+  <div ng-hide="show" class="container">
+  <p><b>George Best</b>, né le 22 mai 1946 à Belfast en Irlande du Nord et mort le 25 novembre 2005 à Londres en Angleterre, est un footballeur nord-irlandais.
+     </br>Il est considéré comme l'un des plus grands attaquants de l'histoire.</p>
+  </div>
+  <div ng-show="show" class="container">
+  <p><b>Sócrates Brasileiro Sampaio de Souza Vieira de Oliveira</b>, plus connu simplement comme Sócrates et surnommé le « docteur », était un footballeur international brésilien évoluant au poste de milieu de terrain,
+     </br>né le 19 février 1954 à Belém et mort le 4 décembre 2011 à São Paulo. Titulaire d'un doctorat en médecine et politiquement engagé pour la démocratie, il a exercé comme spécialiste en médecine sportive et a été consultant après sa carrière sportive. </p>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+</body>
+</html>

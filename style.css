@@ -1,0 +1,29 @@
+body{
+  font-family: 'Shadows Into Light';
+  background-color: #f15946;
+  font-size: 30px;
+}
+
+div{
+  display: block;
+  background-color: #f9c22e;
+  text-align: center;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+.show{
+  background-color: #264653;
+}
+
+button{
+background-color:#336699;
+color: black;
+text-align: center;
+border: black solid 3px;
+border-radius:50px;
+/* width:140px; */
+height:65px;
+}
